@@ -26,6 +26,7 @@ app.use express.static props.client.root
 
 route '/'             , 'index'
 route '/users'        , 'users'
+route '/exdex'        , 'edex'
 
 app.use predef.err404
 

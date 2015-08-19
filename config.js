@@ -46,6 +46,8 @@
 
   route('/users', 'users');
 
+  route('/exdex', 'edex');
+
   app.use(predef.err404);
 
   if (app.get('env' === 'development')) {

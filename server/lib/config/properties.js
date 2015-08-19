@@ -9,8 +9,6 @@
   };
 
   rooted = function(root, extra) {
-    console.log(typeof root);
-    console.log(typeof extra);
     return path.join(root, extra);
   };
 

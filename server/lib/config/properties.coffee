@@ -3,8 +3,6 @@ path = require 'path'
 module.exports = (root) -> module.exports = formProps(root)
 
 rooted = (root, extra) ->
-  console.log(typeof root)
-  console.log(typeof extra)
   path.join root, extra
 
 formProps = (globalRoot) ->
