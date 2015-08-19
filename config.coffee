@@ -4,6 +4,7 @@ logger        = require('morgan'                        )
 cookieParser  = require('cookie-parser'                 )
 bodyParser    = require('body-parser'                   )
 stylus        = require('stylus'                        )
+autoprefixer  = require('autoprefixer-stylus'           )
 
 app           = express(                                )
 
@@ -21,12 +22,19 @@ app.use logger 'dev'
 app.use bodyParser.json()
 app.use bodyParser.urlencoded {extended: false}
 app.use cookieParser()
-app.use stylus.middleware props.client.root
+
+app.use stylus.middleware
+  src: props.client.root
+  compile: (str, path) ->
+    stylus(str)
+    .set('filename', path)
+    .set('compress', true)
+    .use(autoprefixer())
+
 app.use express.static props.client.root
 
 route '/'             , 'index'
 route '/users'        , 'users'
-route '/exdex'        , 'edex'
 
 app.use predef.err404
 
