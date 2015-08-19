@@ -12,6 +12,7 @@ formProps = (globalRoot) ->
   serverRoot = rooted globalRoot, 'server'
   return {
   reRoot: formProps
+
   root: globalRoot
   client: {
     root: clientRoot

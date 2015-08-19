@@ -7,9 +7,12 @@ stylus        = require('stylus'                        )
 
 app           = express(                                )
 
+props         = require('./server/lib/config/properties')(__dirname) #NOTE: THIS NEEDS TO BE BEFORE ALL OTHER CUSTOM ONES!!!
 route         = require('./server/lib/config/routes'    )(app)
-props         = require('./server/lib/config/properties')(__dirname)
-predef         = require('./server/lib/config/predef'   )
+predef        = require('./server/lib/config/predef'    )
+
+debug         = require('debug'                         )('andor:server')
+http          = require('http'                          )
 
 app.set 'views'       , props.client.views
 app.set 'view engine' , 'jade'
@@ -19,7 +22,7 @@ app.use bodyParser.json()
 app.use bodyParser.urlencoded {extended: false}
 app.use cookieParser()
 app.use stylus.middleware props.client.root
-app.use express.static props
+app.use express.static props.client.root
 
 route '/'             , 'index'
 route '/users'        , 'users'
@@ -29,4 +32,11 @@ app.use predef.err404
 app.use predef.devErrHandler if app.get 'env' == 'development'
 app.use predef.prodErrHandler
 
-module.exports = app
+app.set 'port', predef.normalizePort process.env.PORT or '3000'
+
+server = http.createServer app
+
+server.listen app.get 'port'
+
+server.on 'error'     , predef.serverOnError app
+server.on 'listening' , predef.serverOnListening server, debug
