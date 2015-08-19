@@ -1,7 +1,7 @@
 path = require 'path'
-props = require './properties'
+paths = require './paths'
 
-route = (routePath) -> path.join props.server.routes, routePath
+route = (routePath) -> path.join paths.server.routes, routePath
 
 module.exports = (app) -> (
   (args...) ->

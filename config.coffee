@@ -1,21 +1,21 @@
-express       = require('express'                       )
-logger        = require('morgan'                        )
+express       = require('express'                   )
+logger        = require('morgan'                    )
 
-cookieParser  = require('cookie-parser'                 )
-bodyParser    = require('body-parser'                   )
-stylus        = require('stylus'                        )
-autoprefixer  = require('autoprefixer-stylus'           )
+cookieParser  = require('cookie-parser'             )
+bodyParser    = require('body-parser'               )
+stylus        = require('stylus'                    )
+autoprefixer  = require('autoprefixer-stylus'       )
 
-app           = express(                                )
+app           = express(                            )
 
-props         = require('./server/lib/config/properties')(__dirname) #NOTE: THIS NEEDS TO BE BEFORE ALL OTHER CUSTOM ONES!!!
-route         = require('./server/lib/config/routes'    )(app)
-predef        = require('./server/lib/config/predef'    )
+paths         = require('./server/lib/config/paths' )(__dirname) #NOTE: THIS NEEDS TO BE BEFORE ALL OTHER CUSTOM ONES!!!
+route         = require('./server/lib/config/routes')(app)
+predef        = require('./server/lib/config/predef')
 
-debug         = require('debug'                         )('andor:server')
-http          = require('http'                          )
+debug         = require('debug'                     )('andor:server')
+http          = require('http'                      )
 
-app.set 'views'       , props.client.views
+app.set 'views'       , paths.client.views
 app.set 'view engine' , 'jade'
 
 app.use logger 'dev'
@@ -24,14 +24,14 @@ app.use bodyParser.urlencoded {extended: false}
 app.use cookieParser()
 
 app.use stylus.middleware
-  src: props.client.root
+  src: paths.client.root
   compile: (str, path) ->
     stylus(str)
     .set('filename', path)
     .set('compress', true)
     .use(autoprefixer())
 
-app.use express.static props.client.root
+app.use express.static paths.client.root
 
 route '/'             , 'index'
 route '/users'        , 'users'

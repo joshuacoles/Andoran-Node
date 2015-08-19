@@ -38,4 +38,4 @@
 
 }).call(this);
 
-//# sourceMappingURL=properties.js.map
+//# sourceMappingURL=paths.js.map

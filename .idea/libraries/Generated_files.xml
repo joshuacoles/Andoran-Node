@@ -13,7 +13,7 @@
       <root url="file://$PROJECT_DIR$/server/lib/config.js" />
       <root url="file://$PROJECT_DIR$/server/lib/config/routes.js" />
       <root url="file://$PROJECT_DIR$/server/lib/config/predef.js" />
-      <root url="file://$PROJECT_DIR$/server/lib/config/properties.js" />
+      <root url="file://$PROJECT_DIR$/server/lib/config/paths.js" />
       <root url="file://$PROJECT_DIR$/config.js" />
     </CLASSES>
     <SOURCES />
