@@ -9,6 +9,7 @@ app           = express(                                )
 
 route         = require('./server/lib/config/routes'    )(app)
 props         = require('./server/lib/config/properties')(__dirname)
+predef         = require('./server/lib/config/predef'   )
 
 app.set 'views'       , props.client.views
 app.set 'view engine' , 'jade'
@@ -23,3 +24,9 @@ app.use express.static props
 route '/'             , 'index'
 route '/users'        , 'users'
 
+app.use predef.err404
+
+app.use predef.devErrHandler if app.get 'env' == 'development'
+app.use predef.prodErrHandler
+
+module.exports = app
