@@ -3,8 +3,10 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/server/lib/config/routes.js" />
+        <item url="file://$PROJECT_DIR$/server/lib/routes/route.js" />
+        <item url="file://$PROJECT_DIR$/server/routes/index.js" />
         <item url="file://$PROJECT_DIR$/server/lib/config/predef.js" />
-        <item url="file://$PROJECT_DIR$/server/lib/config/properties.js" />
+        <item url="file://$PROJECT_DIR$/server/routes/users.js" />
         <item url="file://$PROJECT_DIR$/config.js" />
       </sourceFilesUrls>
     </properties>
@@ -12,7 +14,10 @@
       <root url="file://$PROJECT_DIR$/server/lib/config.js" />
       <root url="file://$PROJECT_DIR$/server/lib/config.js" />
       <root url="file://$PROJECT_DIR$/server/lib/config/routes.js" />
+      <root url="file://$PROJECT_DIR$/server/lib/routes/route.js" />
+      <root url="file://$PROJECT_DIR$/server/routes/index.js" />
       <root url="file://$PROJECT_DIR$/server/lib/config/predef.js" />
+      <root url="file://$PROJECT_DIR$/server/routes/users.js" />
       <root url="file://$PROJECT_DIR$/server/lib/config/paths.js" />
       <root url="file://$PROJECT_DIR$/config.js" />
     </CLASSES>

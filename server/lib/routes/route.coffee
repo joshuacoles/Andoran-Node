@@ -2,7 +2,7 @@ _ = require('underscore')
 
 configureController = (routeModule, body) ->
   router = require('express').Router()
-  body router, route(router), view
+  body router, route(router), {view: view, raw: raw}
   routeModule.exports = router
 
 route = (router) ->
@@ -19,6 +19,12 @@ view = (name, data) ->
       res.render name, data
     else throw "The info given must be of type 'object' or 'function'"
 
+raw = (data) ->
+  (req, res, next) ->
+    if typeof data == 'function'
+      res.send data(req, res)
+    else
+      res.send data
 
-module.exports = (routeModule) ->
-  _.partial(configureController, routeModule)
+
+module.exports = (routeModule) -> _.partial(configureController, routeModule)
