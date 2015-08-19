@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25851c4f-2f19-4e52-855e-b07613e242ef" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.cson" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/routes/users.js" afterPath="$PROJECT_DIR$/server/routes/users.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/andor.iml" afterPath="$PROJECT_DIR$/.idea/andor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js.map" afterPath="$PROJECT_DIR$/config.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lib/config/predef.js" afterPath="$PROJECT_DIR$/server/lib/config/predef.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lib/config/predef.js.map" afterPath="$PROJECT_DIR$/server/lib/config/predef.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lib/routes/route.coffee" afterPath="$PROJECT_DIR$/server/lib/routes/route.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lib/routes/route.js" afterPath="$PROJECT_DIR$/server/lib/routes/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lib/routes/route.js.map" afterPath="$PROJECT_DIR$/server/lib/routes/route.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/index.coffee" afterPath="$PROJECT_DIR$/server/routes/index.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/index.js" afterPath="$PROJECT_DIR$/server/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/index.js.map" afterPath="$PROJECT_DIR$/server/routes/index.js.map" />
-    </list>
+    <list default="true" id="25851c4f-2f19-4e52-855e-b07613e242ef" name="Default" comment="" />
     <ignored path="andor.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +31,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.coffee" pinned="false" current-in-tab="true">
+      <file leaf-file-name="users.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/users.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5517242">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.021978023">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -112,6 +119,8 @@
         <option value="$PROJECT_DIR$/server/routes/index.js" />
         <option value="$PROJECT_DIR$/server/routes/index.coffee" />
         <option value="$PROJECT_DIR$/server/lib/routes/route.coffee" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/LICENSE" />
       </list>
     </option>
   </component>
@@ -164,28 +173,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="andor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="andor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="andor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users.coffee" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -697,6 +684,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5517242">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.021978023">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
